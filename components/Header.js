@@ -26,7 +26,7 @@ function Header() {
   }, []);
 
   const handleRegister = () => {
-    fetch('https://morningnews-frontend-zeta.vercel.app/users/signup', {
+    fetch('https://morningnews-backend-one.vercel.app/users/signup', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username: signUpUsername, password: signUpPassword }),
