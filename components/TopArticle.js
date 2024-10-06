@@ -13,7 +13,7 @@ function TopArticle(props) {
       return;
     }
 
-    fetch(`https://morningnews-backend-one.vercel.app/users/canBookmark/${user.token}`)
+    fetch(`https://morningnews-backend-beta-red.vercel.app/users/canBookmark/${user.token}`)
       .then(response => response.json())
       .then(data => {
         if (data.result && data.canBookmark) {
